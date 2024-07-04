@@ -1,32 +1,15 @@
 <script lang="ts">
+	import type {
+		GameSettings,
+		GameState,
+		ModifierKeys,
+		SettingsPreset,
+		XY,
+	} from './types'
+
 	import { onMount } from 'svelte'
 
 	import Alic3 from '$lib/Alic3.svelte'
-
-	interface XY<T = number> {
-		x: T
-		y: T
-	}
-
-	interface ModifierKeys<T = boolean> {
-		altKey: T
-		ctrlKey: T
-		metaKey: T
-		shiftKey: T
-	}
-
-	type GameState = 'playing' | 'lost' | 'won'
-
-	interface GameSettings {
-		size: XY
-		mines: number
-		firstRevealOpen: boolean
-	}
-
-	interface SettingsPreset {
-		options: Omit<GameSettings, 'firstRevealOpen'>
-		display: string
-	}
 
 	let hasMounted: boolean = false
 
