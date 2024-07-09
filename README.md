@@ -1,38 +1,27 @@
-# create-svelte
+# 💣 Sweep 💥
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A minesweeper clone made with Svelte + TypeScript.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+<img width="1810" alt="スクリーンショット 2024-07-09 午後3 55 12" src="https://github.com/alic3dev/alic3dev/assets/145309310/244d1760-bff4-4682-8bcc-090ef2570cc0">
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've installed dependencies with `pnpm install`, start a development server:
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```zsh
+pnpm dev
 ```
 
 ## Building
 
 To create a production version of your app:
 
-```bash
-npm run build
+```zsh
+pnpm build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with `pnpm preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Deployments
+
+Project is deployed via Vercel using Edge Functions.
